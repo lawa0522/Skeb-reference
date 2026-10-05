@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ayu — Illustration Reference</title>
+<meta name="description" content="ayu イラスト制作のための参考資料">
+<style>
+:root{
+  --bg:#111218;
+  --panel:#1a1b24;
+  --panel2:#20212c;
+  --text:#f1f1f5;
+  --muted:#b8b8c5;
+  --accent:#b9a7ff;
+  --line:rgba(255,255,255,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(150,125,255,.16), transparent 30rem),
+    radial-gradient(circle at 85% 20%, rgba(110,180,255,.10), transparent 28rem),
+    var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN",
+               "Yu Gothic",Meiryo,sans-serif;
+  line-height:1.85;
+}
+a{color:inherit}
+.wrap{max-width:1050px;margin:0 auto;padding:32px 22px 80px}
+.hero{
+  padding:70px 0 55px;
+  border-bottom:1px solid var(--line);
+}
+.kicker{
+  color:var(--accent);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  font-weight:700;
+}
+h1{
+  font-size:clamp(2.3rem,7vw,4.8rem);
+  line-height:1.05;
+  margin:14px 0 18px;
+  letter-spacing:.02em;
+}
+.hero p{max-width:720px;color:var(--muted);font-size:1rem}
+nav{
+  position:sticky;top:0;z-index:5;
+  margin:0 -22px;
+  padding:12px 22px;
+  background:rgba(17,18,24,.84);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+nav .navin{max-width:1050px;margin:auto;display:flex;gap:10px;overflow:auto}
+nav a{
+  text-decoration:none;white-space:nowrap;
+  color:var(--muted);padding:7px 12px;border-radius:999px;
+  font-size:.9rem;
+}
+nav a:hover{background:var(--panel2);color:var(--text)}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.65rem;margin:0 0 10px}
+h3{font-size:1.08rem;margin:25px 0 8px}
+.lead{color:var(--muted);margin-top:0}
+.card{
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:24px;
+}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.specs{display:grid;grid-template-columns:140px 1fr;gap:8px 18px;margin:0}
+.specs dt{color:var(--muted)}
+.specs dd{margin:0}
+ul{padding-left:1.35rem}
+li{margin:.35rem 0}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:16px;
+  margin-top:22px;
+}
+.figure{
+  margin:0;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+}
+.figure img{
+  display:block;width:100%;height:auto;
+  background:#fff;
+}
+.figure figcaption{padding:12px 14px;color:var(--muted);font-size:.9rem}
+.wide{grid-column:span 7}
+.narrow{grid-column:span 5}
+.full{grid-column:1/-1}
+@media(max-width:700px){
+  .wide,.narrow{grid-column:1/-1}
+}
+.note{
+  border-left:3px solid var(--accent);
+  padding:14px 18px;
+  background:rgba(185,167,255,.07);
+  color:#ddd9ed;
+  border-radius:0 12px 12px 0;
+}
+footer{padding-top:36px;color:#888894;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Illustration Reference</div>
+    <h1>ayu</h1>
+    <p>
+      イラスト制作のための参考資料です。キャラクターデザイン、構図、背景、
+      雰囲気などのイメージをまとめています。
+    </p>
+  </header>
+
+  <nav>
+    <div class="navin">
+      <a href="#character">キャラクター</a>
+      <a href="#settings">追加設定</a>
+      <a href="#composition">構図</a>
+      <a href="#background">背景</a>
+      <a href="#references">参考画像</a>
+    </div>
+  </nav>
+
+  <section id="character">
+    <h2>01 — キャラクター設定</h2>
+    <div class="card">
+      <dl class="specs">
+        <dt>名前</dt><dd>ayu</dd>
+        <dt>性別</dt><dd>男性</dd>
+        <dt>体型</dt><dd>少年体型</dd>
+        <dt>年齢</dt><dd>17歳（実年齢：約120歳）</dd>
+        <dt>種族</dt><dd>ハーフエルフ</dd>
+        <dt>職業</dt><dd>貴族の魔法使い</dd>
+        <dt>身長</dt><dd>167cm</dd>
+      </dl>
+
+      <h3>特徴</h3>
+      <ul>
+        <li>真っ白なミディアムヘア。アホ毛が一本ある</li>
+        <li>エルフ耳</li>
+        <li>青い瞳</li>
+        <li>浮遊する魔導書を手にしているイメージ</li>
+        <li>腰に防護結界のルーンがある</li>
+      </ul>
+
+      <h3>服装</h3>
+      <p>
+        ダークカラーを基調とした、学院風の貴族らしい普段着。短パンを合わせ、
+        上からダークグレーのマントを羽織っています。足元は編み上げの
+        ハイカットブーツ＋ロングソックス。両脚のソックスにはガーターベルトを付けています。
+      </p>
+    </div>
+
+    <div class="gallery">
+      <figure class="figure wide">
+        <img src="images/image1.png" alt="キャラクターデザイン参考">
+        <figcaption>キャラクターデザインの大まかなイメージ</figcaption>
+      </figure>
+      <figure class="figure narrow">
+        <img src="images/image2.jpeg" alt="前髪デザイン参考">
+        <figcaption>前髪のデザイン参考。前髪はこちらのような形を希望</figcaption>
+      </figure>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>デザイン上の変更・希望</h3>
+      <ul>
+        <li>耳はエルフ耳に変更</li>
+        <li>前髪は右の画像のようなデザインに変更</li>
+        <li>アホ毛を追加</li>
+        <li>魔導書は手に持つのではなく、宙に浮いている状態に変更</li>
+        <li>上着は少し短くして、おへそが見えるようにする</li>
+        <li>衣装には模様や装飾品などを少し追加して、より華やかな雰囲気にしていただけると嬉しいです</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="settings">
+    <h2>02 — 追加設定</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>背景設定</h3>
+        <p>
+          元の世界では、頂点に立つ大魔導師として活躍していました。
+          古代遺跡にある時空魔法陣の封印を行っていた際、術式の乱れによって
+          空間崩壊が発生し、偶然にも現代の人間都市へと落ちてしまいました。
+        </p>
+      </div>
+      <div class="card">
+        <h3>性格</h3>
+        <p>
+          知識や未知の魔法に対して純粋な探究心を持っています。内面では仲間との
+          絆をとても大切にしており、身内には非常に甘い一面があります。
+          ただし、素直に相手を心配したり、気遣いを言葉にしたりするのは苦手です。
+        </p>
+      </div>
+      <div class="card">
+        <h3>魔力感知</h3>
+        <p>
+          数km以内に存在する細かな魔力の流れや、姿を隠している存在を感知することができます。
+        </p>
+      </div>
+      <div class="card">
+        <h3>無詠唱魔法</h3>
+        <p>
+          専用の魔導書を手にしている場合、詠唱を必要とせず、通常の魔法使いの数倍の速度で
+          複数の複合魔法陣を構築することができます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="composition">
+    <h2>03 — 構図</h2>
+    <div class="card">
+      <p class="lead">キャラクターをメインにした構図を希望しています。</p>
+      <dl class="specs">
+        <dt>視点</dt><dd>横から見たサイドビュー</dd>
+        <dt>ポーズ</dt>
+        <dd>
+          キャラクターはベッドの上で横向きに寝そべっており、片手でベッドを支え、
+          もう片方の手で魔導書を持っているようなポーズをイメージしています。
+        </dd>
+      </dl>
+    </div>
+
+    <div class="gallery">
+      <figure class="figure full">
+        <img src="images/image3.jpeg" alt="ポーズ・構図の参考">
+        <figcaption>大まかな構図・ポーズの参考</figcaption>
+      </figure>
+      <figure class="figure wide">
+        <img src="images/image4.jpeg" alt="全体の雰囲気・構図の参考">
+        <figcaption>全体の雰囲気・構図の参考</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>04 — 背景</h2>
+    <div class="card">
+      <p>
+        書斎＋ベッドのある部屋を希望しています。
+        華やかで少し豪華な雰囲気で、全体的には下の参考画像のようなテイストをイメージしています。
+      </p>
+    </div>
+
+    <div class="gallery">
+      <figure class="figure full">
+        <img src="images/image5.jpeg" alt="書斎とベッドの背景参考">
+        <figcaption>書斎＋ベッドの背景・雰囲気の参考</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="references">
+    <h2>05 — 参考画像について</h2>
+    <div class="note">
+      参考画像は、キャラクターのデザイン・構図・ポーズ・背景・雰囲気の
+      大まかなイメージを共有するためのものです。画像そのものをそのまま再現することを
+      希望するものではありません。
+    </div>
+  </section>
+
+  <footer>
+    ayu — Illustration Reference<br>
+    This page is a supplementary reference page for the illustration request.
+  </footer>
+</div>
+</body>
+</html>
