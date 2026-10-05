@@ -15,5 +15,4 @@ GitHub Pages 用の静的サイトです。
 - `images/image1.png`
 - `images/image2.jpeg`
 - `images/image3.jpeg`
-- `images/image3.jpeg`
-- `images/image3.jpeg`
+- `images/image4.jpeg`
